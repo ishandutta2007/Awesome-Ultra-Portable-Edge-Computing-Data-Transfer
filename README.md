@@ -67,7 +67,7 @@ Below is a comparison of commercial SaaS products, edge devices, and managed pla
 
 ## 💻 Open-Source GitHub Projects
 
-Below are top open-source projects for edge computing, lightweight Kubernetes, stream processing, and offline data transfer. Projects are **sorted by GitHub Stars_Count in descending order**.
+Below are top open-source projects for edge computing, lightweight Kubernetes, stream processing, and offline data transfer. Projects are **sorted by GitHub_Stars_Count in descending order**.
 
 ### 🚀 Open-Source Projects Leaderboard
 
@@ -96,7 +96,7 @@ We welcome contributions from the community! To suggest a new open-source reposi
 
 1. 🍴 **Fork** this repository.
 2. 📝 **Add or edit** entries in `README.md` maintaining table formatting.
-3. 🔍 **Verify details**: Include official documentation links, exact pricing, free tier details, or GitHub Stars_Counts.
+3. 🔍 **Verify details**: Include official documentation links, exact pricing, free tier details, or GitHub_Stars_Counts.
 4. 📬 **Open a Pull Request** with a descriptive summary of your additions.
 
 ---
