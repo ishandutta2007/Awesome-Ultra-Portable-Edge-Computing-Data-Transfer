@@ -30,7 +30,9 @@
 - [🏢 SaaS & Hosted Commercial Platforms](#-saas--hosted-commercial-platforms)
 - [💻 Open-Source GitHub Projects](#-open-source-github-projects)
 - [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support](#-support)
 - [⚠️ Security & Operational Disclaimer](#️-security--operational-disclaimer)
+- [⭐ Star History](#--star-history)
 
 ---
 
@@ -99,11 +101,34 @@ We welcome contributions from the community! To suggest a new open-source reposi
 
 ---
 
+## 💖 Support
+
+Thank you for exploring the **Awesome Ultra-Portable Edge Computing & Data Transfer** ecosystem! If you find this curated list helpful for your edge infrastructure, IoT deployments, or research projects, please consider supporting the project:
+
+- ⭐ **Star** this repository to help increase its visibility.
+- 🍴 **Fork** and contribute new edge devices or open-source frameworks.
+- 📢 **Share** this list with fellow edge architects, developers, and DevOps engineers.
+- ☕ **Sponsor / Buy me a coffee**: If you'd like to support ongoing maintenance and curation, visit the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+
+<p align="center">
+  <a href="https://github.com/sponsors/ishandutta2007">
+    <img src="https://img.shields.io/badge/Sponsor-❤️-ff69b4?style=for-the-badge&logo=github-sponsors" alt="Sponsor" />
+  </a>
+</p>
+
+---
+
 ## ⚠️ Security & Operational Disclaimer
 
 - 🔐 **Physical Security**: Edge devices deployed in remote or disconnected locations require physical tamper-resistance, full-disk hardware encryption (AES-256 / TPM 2.0), and secure boot validation.
 - 🔋 **Power Constraints**: Ultra-portable devices (such as AWS Snowcone) require dedicated battery packs or external power supplies when operated in field environments.
 - 📡 **Connectivity Resilience**: Ensure local caching (e.g., SQLite, SonnetDB, or Simple IoT graph DB) is configured to handle prolonged WAN outages gracefully.
+
+---
+
+##  Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Ultra-Portable-Edge-Computing-Data-Transfer&type=date&legend=top-left)](https://saar-history.dera.page/#ishandutta2007/Awesome-Ultra-Portable-Edge-Computing-Data-Transfer&type=date&legend=top-left)
 
 ---
 
