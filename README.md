@@ -1,199 +1,112 @@
-# Awesome-Ultra-Portable-Edge-Computing-Data-Transfer
-
-## Top Ultra-Portable Edge Computing & Data Transfer Ecosystem
-
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on Rugged Edge Devices, Offline Data Migration & Open-Source Edge Platforms*  
-
-**Last updated: October 2026**
-
-
-
-This repository tracks notable **commercial edge computing and data transfer devices** and **open-source projects** that bring compute and storage to disconnected, remote, or bandwidth-constrained environments. These tools range from ruggedized transfer appliances to full Kubernetes clusters running at the edge.
-
-
-
-**Examples** include AWS Snowcone, Azure Data Box Disk, Google Distributed Cloud Edge, NVIDIA Jetson Edge, Scale Computing Platform, Dell NativeEdge, HPE Edgeline, Cisco Catalyst Edge, Lenovo ThinkEdge, and Advantech Edge (the category leaders).
-
-
-
-**Open-source emphasis**: Edge computing is a strong open-source domain. **ThingsBoard Edge** leads as the most complete open-source edge platform with cloud synchronization. **IoTSharp** provides a full cloud-edge-device product matrix. **Simple IoT** delivers a dependency-free distributed graph database for edge. **plato-edge** enables offline queueing for constrained devices. **BWS IceCube** offers a friendly AWS Snowball alternative. This section is heavily expanded.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[AWS Snowcone](https://aws.amazon.com/snowcone/)**  
-
-  **The smallest rugged AWS data transfer and edge computing device** — 8 TB (HDD) or 14 TB (SSD) usable storage in a 4.5 lb device . **2 vCPU, 4 GB RAM** for EC2-compatible instances and AWS IoT Greengrass . **256-bit encryption**, NFS transfer, Wi-Fi (North America only), and dual 1/10 Gb Ethernet ports . **Battery-based operation** for portability, E-Ink touchscreen for configuration and electronic shipping labels . **Designed for industrial IoT, transportation, healthcare IoT, content distribution, tactical edge computing, logistics, and autonomous vehicles** . Max job length 360 days for edge computing . **Best for portable, rugged edge computing in disconnected environments**.
-
-
-
-- **[Azure Data Box Disk](https://azure.microsoft.com/en-us/products/databox/)**  
-
-  **Microsoft's offline data transfer solution** — up to 35 TB per order using 5 SSDs . **AES 128-bit encryption**, USB 3.1/SATA interface, Microsoft-managed shipping . **Best for one-time bulk data migration to Azure** when network transfer is limited, slow, or costly .
-
-
-
-- **[Google Distributed Cloud Edge](https://cloud.google.com/distributed-cloud)**  
-
-  **Google's fully managed edge solution** — runs GKE clusters on dedicated hardware installed on-premises . **Connected rack (base + expansion) or standalone server** form factors . **Supports Kubernetes containers, VMs, and GPU workloads** on select configurations . **Google remotely monitors and maintains** hardware, software updates, and security patches . **Designed for applications needing stable network, low latency, large local data processing, or data residency** . **Best for enterprises wanting managed Kubernetes at the edge**.
-
-
-
-- **[NVIDIA Jetson Edge](https://www.nvidia.com/autonomous-machines/embedded-systems/)**  
-
-  **The leading edge AI computing platform** — Jetson Orin and Thor families for robotics and edge AI . **JetPack SDK** provides pre-built, cloud-native software services for generative AI, computer vision, and robotics . **Optimized runtimes for open models** including NVIDIA Nemotron, Cosmos, and Isaac GR00T . **Industrial-grade variants** available with extended temperature ranges (-40°C to 85°C), DRAM ECC, and 10-year lifespan . **Best for edge AI inference and robotics**.
-
-
-
-- **[Scale Computing Platform](https://www.scalecomputing.com/)**  
-
-  Edge-ready hyperconverged infrastructure for remote sites and branch offices.
-
-
-
-- **[Dell NativeEdge](https://www.dell.com/)**  
-
-  Dell's edge operations software platform for deploying and managing edge infrastructure.
-
-
-
-- **[HPE Edgeline](https://www.hpe.com/)**  
-
-  Converged edge systems for industrial IoT and edge computing workloads.
-
-
-
-- **[Cisco Catalyst Edge](https://www.cisco.com/)**  
-
-  Cisco's edge computing and networking platform for industrial environments.
-
-
-
-- **[Lenovo ThinkEdge](https://www.lenovo.com/)**  
-
-  Lenovo's rugged edge servers for AI inference and data processing at the edge.
-
-
-
-- **[Advantech Edge](https://www.advantech.com/)**  
-
-  Industrial edge computing hardware and software for manufacturing and IoT.
-
-
-
-## Open-Source GitHub Projects
-
-
-
-- **[ThingsBoard Edge](https://github.com/thingsboard/thingsboard-edge)**  
-
-  **The leading open-source edge computing platform**, Apache-2.0 licensed . **Free for personal and commercial use** — deploy anywhere . **Processes and analyzes data closer to source** — filters, aggregates, and computes locally to cut bandwidth costs and reduce latency . **Seamlessly synchronizes with ThingsBoard Cloud** (Demo or CE) . Features **local deployment and storage** when disconnected, **traffic filtering**, **local alarms**, **real-time SCADA-like dashboards**, and **batch update** for thousands of edge configurations . **Use cases**: autonomous vehicles (filtering 5-20 TB/day to subset), smart farming, smart houses, security solutions, in-hospital monitoring, predictive maintenance . **Best for industrial IoT edge deployments with cloud sync** .
-
-
-
-- **[IoTSharp](https://github.com/IoTSharp/IoTSharp)**  
-
-  **Open-source industrial IoT platform with cloud-edge-device product matrix**, Apache-2.0 licensed . **Three layers**: Platform (device access, telemetry, rule chains, multi-tenancy), **Edge (IoTEdge runtime with Modbus, OPC UA, PLC drivers, script transformation)**, and **Device (IoTEmbedded for MCU/RTOS with BASIC script engine, Modbus RTU, MQTT)** . **AI foundation (Tomur)** for offline/intranet local model runtime with GGUF LLM, speech, image, and OCR . **SonnetDB profile** enables fully functional deployment with zero external dependencies in offline scenarios . Quick start: `docker compose -f docker-compose.sonnetdb.yml up -d` . **Best for full-stack industrial IoT from device to cloud** .
-
-
-
-- **[Simple IoT](https://github.com/simpleiot/simpleiot)**  
-
-  **Dependency-free distributed graph database optimized for IoT edge**, Apache-2.0 licensed . **Single application runs in both cloud and edge instances** . **Efficient bidirectional synchronization** — data can change anywhere (edge or cloud) and syncs seamlessly . Features **flexible UI for configuration and current values**, **rules engine running on all instances**, **extensive Modbus support** (server and client), **Linux 1-wire support**, and **NATS-based extensibility** . **Designed for limited bandwidth (< 100 kb/s Cat-M modems) and unreliable connectivity** — systems continue operating offline . **Best for IoT projects needing simple, dependency-free edge-to-cloud sync** .
-
-
-
-- **[plato-edge](https://pypi.org/project/plato-edge/)**  
-
-  **Zero-dependency fleet modules for constrained edge devices**, open-source . **Runs on Jetson Orin, Raspberry Pi, and other edge hardware** . **Offline-capable** — queue tiles offline and sync when connected . Simple API: `OfflineQueue()` for queueing, `EdgeClient.sync_queue()` for sync . **Best for lightweight edge data collection with offline queueing** .
-
-
-
-- **[BWS IceCube](https://github.com/seanpm2001/BWS_IceCube)**  
-
-  **Open-source alternative to AWS Snowball**, Markdown specification . **Part of BlazeOS Web Services (BWS)** — open-source alternative to AWS with better privacy, self-hosting, and mass-hosting support . **Friendly alternative to AWS Snowballs** for big data storage . **Note**: technical specification and documentation only — implementation not yet available . **Best for understanding open-source data transfer appliance architecture** .
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **Skyplane** — Blazing fast bulk data transfers between cloud object stores, **110x faster than AWS DataSync** . Provisions VM fleets for parallel transfer with compression and bandwidth tiering . Supports AWS, Azure, GCP, IBM . **Not edge-specific** but relevant for cloud data migration.
-
-- **Eclipse NEMO** — Offline application execution and data integrity for edge, **100% service availability during offline periods**, **83% delay reduction** .
-
-- **EdgeX Foundry** — Vendor-neutral open-source edge IoT framework (not in search results but widely known).
-
-
-
-**Frameworks for building custom edge solutions**: Combine **ThingsBoard Edge** for industrial IoT with cloud sync, traffic filtering, and SCADA dashboards . Use **IoTSharp** for a full cloud-edge-device product matrix with AI foundation . Deploy **Simple IoT** for dependency-free edge-to-cloud synchronization with Modbus support . Integrate **plato-edge** for lightweight offline queueing on constrained devices . Note that **AWS Snowcone** and **Azure Data Box Disk** are purpose-built hardware appliances for offline data migration — open-source alternatives like **BWS IceCube** are specification-stage projects . For cloud-to-cloud bulk transfers, **Skyplane** provides open-source acceleration .
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Edge devices often operate in remote or disconnected environments. **Physical security, encryption at rest, and tamper detection are critical** for edge deployments.
-
-- **AWS Snowcone requires battery-based operation** — power adapter not included; ensure adequate power supply for your use case .
-
-- **Google Distributed Cloud Edge requires Google remote monitoring** — physical access may be needed for issues that cannot be resolved remotely .
-
-- **Open-source edge platforms vary in maturity** — ThingsBoard Edge and Simple IoT are production-ready; BWS IceCube is specification-only .
-
-- The open-source ecosystem provides strong edge computing, IoT sync, and data collection foundations, but **ruggedized hardware appliances, managed infrastructure, and vendor-supported SLAs** remain primarily commercial offerings.
-
-
+# ⚡ Awesome Ultra-Portable Edge Computing & Data Transfer
+
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Ultra-Portable Edge Computing & Data Transfer Banner" width="100%">
+</p>
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Ultra-Portable-Edge-Computing-Data-Transfer/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Ultra-Portable-Edge-Computing-Data-Transfer?style=flat-square&color=gold" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Ultra-Portable-Edge-Computing-Data-Transfer/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Ultra-Portable-Edge-Computing-Data-Transfer?style=flat-square&color=blue" alt="GitHub Forks"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Ultra-Portable-Edge-Computing-Data-Transfer/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Ultra-Portable-Edge-Computing-Data-Transfer/commits/main"><img src="https://img.shields.io/github/last-commit/ishandutta2007/Awesome-Ultra-Portable-Edge-Computing-Data-Transfer?style=flat-square" alt="Last Commit"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
 ---
 
+## 🌟 Top Ultra-Portable Edge Computing & Data Transfer Ecosystem
 
+> **A Curated List of SaaS Products, Commercial Hardware Devices & Open-Source GitHub Projects**  
+> *Focused on Rugged Edge Devices, Offline Data Migration, Tactical Edge AI & Open-Source Edge Orchestration Platforms*
 
-**Made for IoT engineers, edge architects, and organizations seeking edge computing sovereignty.**  
+**Last updated: October 2026** 📅
 
-Let's make ultra-portable edge computing and data transfer more open, transparent, and accessible.
+---
+
+## 📌 Table of Contents
+- [📖 Overview & Market Analysis](#-overview--market-analysis)
+- [🏢 SaaS & Hosted Commercial Platforms](#-saas--hosted-commercial-platforms)
+- [💻 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [⚠️ Security & Operational Disclaimer](#️-security--operational-disclaimer)
+
+---
+
+## 📖 Overview & Market Analysis
+
+This repository tracks notable **commercial edge computing and data transfer devices** and **open-source projects** that bring compute, storage, and AI inference to disconnected, remote, or bandwidth-constrained environments. These tools range from ruggedized transfer appliances (like AWS Snowcone and Azure Data Box Disk) to edge Kubernetes clusters and offline stream processing engines.
+
+### 🌐 Sector Market Size & Structure
+> 📈 **Market Size Estimate**: The global Edge Computing and Portable Edge Data Transfer market is valued at approximately **$21.4 Billion in 2026** and is projected to reach **$155 Billion by 2032**, growing at a **CAGR of ~38.9%**.  
+> 📊 **Market Structure**: The sector is **Moderately Fragmented**. While cloud hyperscalers (Microsoft, AWS, Google) dominate central cloud data sync and managed edge control planes, hardware innovation and localized edge processing remain highly distributed among specialized hardware OEMs (NVIDIA, Dell, HPE, Lenovo, Advantech) and open-source edge computing software platforms.
+
+---
+
+## 🏢 SaaS & Hosted Commercial Platforms
+
+Below is a comparison of commercial SaaS products, edge devices, and managed platforms. The table is **sorted by Company Size (Revenue / Valuation) in descending order**.
+
+| Product / Platform | Company Size (Valuation / Rev) | Description | Pricing (Starting Tiers) | Free Tier / Free Trial Limits |
+| :--- | :--- | :--- | :--- | :--- |
+| 🪟 **[Azure Data Box Disk](https://azure.microsoft.com/en-us/products/databox/)** | **~$3.1 Trillion** *(Market Cap / $245B Rev)* | Portable, ruggedized SSD appliances for bulk offline data migration to Azure without bandwidth bottlenecks. | **$50 one-time service fee** per 40 TB order (+ $5/day per disk after 12 days) | **$200 free credit** valid for 30 days + 55+ free Azure services |
+| 💚 **[NVIDIA Jetson Edge](https://www.nvidia.com/autonomous-machines/embedded-systems/)** | **~$3.0 Trillion** *(Market Cap / $60B Rev)* | Industry-leading edge AI & robotics computing platform featuring Jetson Orin modules & JetPack SDK. | **$199** for Jetson Orin Nano module (*$499 developer kit*) | **NVIDIA JetPack SDK free** download & 90-day trial for NVIDIA AI Enterprise |
+| 🔍 **[Google Distributed Cloud Edge](https://cloud.google.com/distributed-cloud)** | **~$2.1 Trillion** *(Market Cap / $307B Rev)* | Fully managed edge GKE solution running containerized & GPU workloads on Google-managed on-premises hardware. | Starts at **~$1,500/month** per node base subscription | **$300 free credit** valid for 90 days across Google Cloud Platform services |
+| 📦 **[AWS Snowcone](https://aws.amazon.com/snowcone/)** | **~$1.9 Trillion** *(Market Cap / $575B Rev)* | Portable, 4.5 lb ruggedized data migration & edge compute device with EC2 & AWS IoT Greengrass support. | **$60 one-time service fee** per job (*8 TB HDD*) / $150 (*14 TB SSD*) + $6/day after 5 days | **AWS Free Tier**: 12 months free access + $200 AWS activation credits |
+| 🔌 **[Cisco Catalyst Edge](https://www.cisco.com/)** | **~$200 Billion** *(Market Cap / $57B Rev)* | Industrial edge routers and compute gateways for IoT connectivity, vehicle telemetry, and edge analytics. | Hardware starts at **~$1,200/unit** + Cisco DNA Advantage tier at $350/yr | **Cisco DevNet Sandbox**: Free 30-day cloud lab access & evaluation licenses |
+| 💻 **[Dell NativeEdge](https://www.dell.com/)** | **~$80 Billion** *(Market Cap / $88B Rev)* | Edge operations software platform simplifying deployment, lifecycle management, and security of edge devices. | Software subscription starts at **~$35/node/month** (+ PowerEdge hardware from $1,100) | **60-day free proof-of-concept** trial & interactive demo sandbox environment |
+| 🖥️ **[HPE Edgeline](https://www.hpe.com/)** | **~$25 Billion** *(Market Cap / $29B Rev)* | Converged edge systems for high-performance industrial IoT, data ingestion, and enterprise edge computing. | HPE Edgeline EL300 system starts at **~$2,400 per unit** | **HPE GreenLake 30-day test drive** & developer evaluation program |
+| ⚙️ **[Lenovo ThinkEdge](https://www.lenovo.com/)** | **~$15 Billion** *(Market Cap / $62B Rev)* | Compact, fanless rugged edge servers for AI inference, sensor aggregation, and branch office compute. | ThinkEdge SE30 / SE50 servers start at **~$899 per device** | **30-day Lenovo TruScale Edge evaluation** & trial loaner program |
+| 🏭 **[Advantech Edge](https://www.advantech.com/)** | **~$8 Billion** *(Market Cap / $2.1B Rev)* | Industrial-grade IoT edge intelligence gateways and fanless embedded computers for automation. | Industrial Edge Gateways (UNO/ARK series) start at **~$450 per unit** | **WISE-PaaS 90-day free developer account** with 1,000 free platform points |
+| ⚖️ **[Scale Computing Platform](https://www.scalecomputing.com/)** | **~$500 Million** *(Valuation / $50M ARR)* | Hyperconverged infrastructure (HCI) software platform engineered for remote branch sites and edge clusters. | SC//HyperCore edge appliance starts at **~$4,500 for a 3-node cluster** | **30-day free interactive software trial** & hands-on virtual lab |
+
+---
+
+## 💻 Open-Source GitHub Projects
+
+Below are top open-source projects for edge computing, lightweight Kubernetes, stream processing, and offline data transfer. Projects are **sorted by GitHub Star Count in descending order**.
+
+### 🚀 Open-Source Projects Leaderboard
+
+| Rank | Project & Repository | GitHub Stars | License | Primary Category | Key Features & Highlights |
+| :---: | :--- | :---: | :---: | :--- | :--- |
+| **1** | ☸️ **[K3s](https://github.com/k3s-io/k3s)** | [<img src="https://img.shields.io/github/stars/k3s-io/k3s?style=social&color=white" alt="K3s Stars"/>](https://github.com/k3s-io/k3s/stargazers) | Apache-2.0 | Lightweight Kubernetes | Fully compliant Kubernetes distribution packaged in a single <70MB binary, optimized for ARM64, IoT devices, and edge nodes. |
+| **2** | 📦 **[MicroK8s](https://github.com/canonical/microk8s)** | [<img src="https://img.shields.io/github/stars/canonical/microk8s?style=social&color=white" alt="MicroK8s Stars"/>](https://github.com/canonical/microk8s/stargazers) | Apache-2.0 | Edge Kubernetes | Canonical's zero-ops, pure upstream Kubernetes snap package for developers, IoT edge gateways, and CI/CD pipelines. |
+| **3** | 🌐 **[KubeEdge](https://github.com/kubeedge/kubeedge)** | [<img src="https://img.shields.io/github/stars/kubeedge/kubeedge?style=social&color=white" alt="KubeEdge Stars"/>](https://github.com/kubeedge/kubeedge/stargazers) | Apache-2.0 | CNCF Edge Orchestration | Extends native Kubernetes to edge devices, supporting MQTT/Modbus protocols and offline autonomous operation during network disconnects. |
+| **4** | 🌉 **[OpenYurt](https://github.com/openyurtio/openyurt)** | [<img src="https://img.shields.io/github/stars/openyurtio/openyurt?style=social&color=white" alt="OpenYurt Stars"/>](https://github.com/openyurtio/openyurt/stargazers) | Apache-2.0 | CNCF Edge Management | Converts standard Kubernetes clusters into edge-ready infrastructure with autonomous edge node independence and cloud-edge synergy. |
+| **5** | 🛠️ **[Baetyl](https://github.com/baetyl/baetyl)** | [<img src="https://img.shields.io/github/stars/baetyl/baetyl?style=social&color=white" alt="Baetyl Stars"/>](https://github.com/baetyl/baetyl/stargazers) | Apache-2.0 | LF Edge IoT Framework | Seamlessly extends cloud computing, data processing, and microservice capabilities to constrained edge hardware devices. |
+| **6** | ⚡ **[LF Edge eKuiper](https://github.com/lf-edge/ekuiper)** | [<img src="https://img.shields.io/github/stars/lf-edge/ekuiper?style=social&color=white" alt="eKuiper Stars"/>](https://github.com/lf-edge/ekuiper/stargazers) | Apache-2.0 | Edge Stream Processing | Ultra-lightweight SQL-based streaming data processor running with low memory footprints (<10MB) for real-time IoT edge analysis. |
+| **7** | 🏭 **[EdgeX Foundry](https://github.com/edgexfoundry/edgex-go)** | [<img src="https://img.shields.io/github/stars/edgexfoundry/edgex-go?style=social&color=white" alt="EdgeX Stars"/>](https://github.com/edgexfoundry/edgex-go/stargazers) | Apache-2.0 | Industrial IoT Middleware | Vendor-neutral, open-source interoperability framework providing standard APIs between sensors, industrial equipment, and cloud/edge apps. |
+| **8** | 📊 **[IoTSharp](https://github.com/IoTSharp/IoTSharp)** | [<img src="https://img.shields.io/github/stars/IoTSharp/IoTSharp?style=social&color=white" alt="IoTSharp Stars"/>](https://github.com/IoTSharp/IoTSharp/stargazers) | Apache-2.0 | Industrial IoT Platform | Cloud-edge-device IoT platform featuring embedded Modbus/OPC-UA drivers, rule chains, and Tomur local AI runtime for offline GGUF models. |
+| **9** | 🔌 **[Akri](https://github.com/project-akri/akri)** | [<img src="https://img.shields.io/github/stars/project-akri/akri?style=social&color=white" alt="Akri Stars"/>](https://github.com/project-akri/akri/stargazers) | Apache-2.0 | K8s Resource Interface | Exposes leaf devices (IP cameras, USB devices, sensors) as Kubernetes resources, enabling dynamic workload scheduling at the edge. |
+| **10** | ✈️ **[Skyplane](https://github.com/skyplane-project/skyplane)** | [<img src="https://img.shields.io/github/stars/skyplane-project/skyplane?style=social&color=white" alt="Skyplane Stars"/>](https://github.com/skyplane-project/skyplane/stargazers) | MIT | Multi-Cloud Data Transfer | Accelerates bulk object storage data transfers across AWS, Azure, and GCP by up to 110x using custom VM overlays and parallel transfer. |
+| **11** | 🔄 **[Simple IoT](https://github.com/simpleiot/simpleiot)** | [<img src="https://img.shields.io/github/stars/simpleiot/simpleiot?style=social&color=white" alt="Simple IoT Stars"/>](https://github.com/simpleiot/simpleiot/stargazers) | Apache-2.0 | Graph DB & Sync | Dependency-free distributed graph database designed for reliable edge-to-cloud bidirectional data sync over low-bandwidth connection (<100 kb/s). |
+| **12** | 🖥️ **[ThingsBoard Edge](https://github.com/thingsboard/thingsboard-edge)** | [<img src="https://img.shields.io/github/stars/thingsboard/thingsboard-edge?style=social&color=white" alt="ThingsBoard Edge Stars"/>](https://github.com/thingsboard/thingsboard-edge/stargazers) | Apache-2.0 | Edge Computing Engine | Brings local rule execution, data filtering, local SCADA dashboards, and automated cloud sync to disconnected industrial edge environments. |
+| **13** | 🌁 **[Eclipse fog05](https://github.com/eclipse-fog05/fog05)** | [<img src="https://img.shields.io/github/stars/eclipse-fog05/fog05?style=social&color=white" alt="fog05 Stars"/>](https://github.com/eclipse-fog05/fog05/stargazers) | EPL-2.0 | Fog Computing Virtualization | Unified compute, storage, and networking virtualization platform managing VMs, containers, and bare-metal processes across fog nodes. |
+| **14** | 🧊 **[BWS IceCube](https://github.com/seanpm2001/BWS_IceCube)** | [<img src="https://img.shields.io/github/stars/seanpm2001/BWS_IceCube?style=social&color=white" alt="BWS IceCube Stars"/>](https://github.com/seanpm2001/BWS_IceCube/stargazers) | Open Specification | Data Appliance Spec | Open specification and architectural blueprint for open-source offline data transfer appliances designed as a privacy-centric AWS Snowball alternative. |
+
+---
+
+## 🤝 How to Contribute
+
+We welcome contributions from the community! To suggest a new open-source repository, commercial device, or update existing data:
+
+1. 🍴 **Fork** this repository.
+2. 📝 **Add or edit** entries in `README.md` maintaining table formatting.
+3. 🔍 **Verify details**: Include official documentation links, exact pricing, free tier details, or GitHub star counts.
+4. 📬 **Open a Pull Request** with a descriptive summary of your additions.
+
+---
+
+## ⚠️ Security & Operational Disclaimer
+
+- 🔐 **Physical Security**: Edge devices deployed in remote or disconnected locations require physical tamper-resistance, full-disk hardware encryption (AES-256 / TPM 2.0), and secure boot validation.
+- 🔋 **Power Constraints**: Ultra-portable devices (such as AWS Snowcone) require dedicated battery packs or external power supplies when operated in field environments.
+- 📡 **Connectivity Resilience**: Ensure local caching (e.g., SQLite, SonnetDB, or Simple IoT graph DB) is configured to handle prolonged WAN outages gracefully.
+
+---
+
+<p align="center">
+  <b>Built with ❤️ for Edge Architects, IoT Engineers, and Disconnected Systems Developers.</b>
+</p>
