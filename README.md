@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Ultra-Portable-Edge-Computing-Data-Transfer/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Ultra-Portable-Edge-Computing-Data-Transfer?style=flat-square&color=gold" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Ultra-Portable-Edge-Computing-Data-Transfer/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Ultra-Portable-Edge-Computing-Data-Transfer?style=flat-square&color=gold" alt="GitHub_Stars"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Ultra-Portable-Edge-Computing-Data-Transfer/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Ultra-Portable-Edge-Computing-Data-Transfer?style=flat-square&color=blue" alt="GitHub Forks"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Ultra-Portable-Edge-Computing-Data-Transfer/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Ultra-Portable-Edge-Computing-Data-Transfer/commits/main"><img src="https://img.shields.io/github/last-commit/ishandutta2007/Awesome-Ultra-Portable-Edge-Computing-Data-Transfer?style=flat-square" alt="Last Commit"/></a>
@@ -67,11 +67,11 @@ Below is a comparison of commercial SaaS products, edge devices, and managed pla
 
 ## 💻 Open-Source GitHub Projects
 
-Below are top open-source projects for edge computing, lightweight Kubernetes, stream processing, and offline data transfer. Projects are **sorted by GitHub Star Count in descending order**.
+Below are top open-source projects for edge computing, lightweight Kubernetes, stream processing, and offline data transfer. Projects are **sorted by GitHub Stars_Count in descending order**.
 
 ### 🚀 Open-Source Projects Leaderboard
 
-| Rank | Project & Repository | GitHub Stars | License | Primary Category | Key Features & Highlights |
+| Rank | Project & Repository | GitHub_Stars | License | Primary Category | Key Features & Highlights |
 | :---: | :--- | :---: | :---: | :--- | :--- |
 | **1** | ☸️ **[K3s](https://github.com/k3s-io/k3s)** | [<img src="https://img.shields.io/github/stars/k3s-io/k3s?style=social&color=white" alt="K3s Stars"/>](https://github.com/k3s-io/k3s/stargazers) | Apache-2.0 | Lightweight Kubernetes | Fully compliant Kubernetes distribution packaged in a single <70MB binary, optimized for ARM64, IoT devices, and edge nodes. |
 | **2** | 📦 **[MicroK8s](https://github.com/canonical/microk8s)** | [<img src="https://img.shields.io/github/stars/canonical/microk8s?style=social&color=white" alt="MicroK8s Stars"/>](https://github.com/canonical/microk8s/stargazers) | Apache-2.0 | Edge Kubernetes | Canonical's zero-ops, pure upstream Kubernetes snap package for developers, IoT edge gateways, and CI/CD pipelines. |
@@ -96,7 +96,7 @@ We welcome contributions from the community! To suggest a new open-source reposi
 
 1. 🍴 **Fork** this repository.
 2. 📝 **Add or edit** entries in `README.md` maintaining table formatting.
-3. 🔍 **Verify details**: Include official documentation links, exact pricing, free tier details, or GitHub star counts.
+3. 🔍 **Verify details**: Include official documentation links, exact pricing, free tier details, or GitHub Stars_Counts.
 4. 📬 **Open a Pull Request** with a descriptive summary of your additions.
 
 ---
